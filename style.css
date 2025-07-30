@@ -302,6 +302,100 @@ body {
     background: var(--white);
 }
 
+.destination-section {
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+.dest-header {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+.dest-popular {
+  color: #e6433b;
+  font-size: 0.95rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.dest-header h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0.25em 0 0.75em 0;
+  letter-spacing: -1px;
+}
+.dest-header p {
+  color: #4a4a4a;
+  max-width: 550px;
+  line-height: 1.5;
+}
+.dest-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  grid-auto-rows: 320px;
+}
+.dest-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px #0001;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.2rem 1.2rem 1.2rem 1.2rem;
+}
+.dest-card-large {
+  grid-row: span 2;
+  grid-column: span 1;
+}
+.dest-card-img {
+  position: absolute;
+  top:0; left:0; right:0; bottom:0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.88;
+  z-index: 0;
+}
+.dest-country {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  background: #26b7fc;
+  color: #fff;
+  font-size: 0.98rem;
+  font-weight: bold;
+  border-radius: 2px;
+  padding: 5px 14px;
+  margin-bottom: .7em;
+}
+.dest-title {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 0.2em;
+  font-weight: 600;
+}
+.dest-stars {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  font-size: 1.15rem;
+  letter-spacing: 2px;
+}
+/* Responsive */
+@media (max-width: 900px) {
+  .dest-grid { grid-template-columns: 1fr 1fr; grid-auto-rows: 270px; }
+  .dest-card-large { grid-row: span 1; }
+}
+@media (max-width: 600px) {
+  .dest-header { text-align: center; }
+  .dest-header h2 { font-size: 1.5rem; }
+  .dest-grid { grid-template-columns: 1fr; grid-auto-rows: 200px;}
+  .destination-section { padding: 0 0.5rem; }
+}
+
 .features-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -335,6 +429,8 @@ body {
     margin: 0 auto 24px;
     color: white;
 }
+
+
 
 .feature-card h3 {
     font-size: 1.5rem;
