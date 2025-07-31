@@ -206,7 +206,7 @@ function showNotification(message, type = 'info') {
     notification.textContent = message;
 
     // Add styles
-    notification.style.cssText = `
+    notification.style.Text = `
         position: fixed;
         top: 100px;
         right: 20px;
@@ -250,7 +250,7 @@ document.addEventListener('click', function(e) {
         const x = e.clientX - rect.left - size / 2;
         const y = e.clientY - rect.top - size / 2;
 
-        ripple.style.cssText = `
+        ripple.style.Text = `
             position: absolute;
             border-radius: 50%;
             background: rgba(255, 255, 255, 0.6);
@@ -358,7 +358,7 @@ function addScrollToTop() {
     const scrollButton = document.createElement('button');
     scrollButton.innerHTML = '↑';
     scrollButton.className = 'scroll-to-top';
-    scrollButton.style.cssText = `
+    scrollButton.style.Text = `
         position: fixed;
         bottom: 30px;
         right: 30px;
