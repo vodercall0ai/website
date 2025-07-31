@@ -24,7 +24,7 @@
                 <a href="#features" class="nav-link">AI Assistant</a>
                 <a href="#how-it-works" class="nav-link">What we do</a>
                 <a href="#contact" class="nav-link">Contact</a>
-                <a href="#Request demo-free" class="nav-cta">Try NOW</a>
+                <a href="#contact" class="nav-cta">Try NOW</a>
             </div>
             <div class="hamburger" id="hamburger">
                 <span class="bar"></span>
@@ -72,14 +72,14 @@
                             
   <div class="dest-grid">
     <!-- HONG KONG -->
-    <div class="dest-card dest-card-large dest-card-topdown">
+    <div class="dest-card dest-card-topdown">
       <div class="dest-card-img" style="background-image: url('ChineseFood.png');"></div>
       <span class="dest-country">HONG KONG</span>
       <h3 class="dest-title">Chinese Restaurant</h3>
     </div>
     
     <!-- Tokyo -->
-    <div class="dest-card dest-card-large dest-card-topdown">
+    <div class="dest-card dest-card-topdown">
       <div class="dest-card-img" style="background-image: url('sushi.png');"></div>
       <span class="dest-country">Tokyo</span>
       <h3 class="dest-title">Sushi-ya</h3>
@@ -102,7 +102,7 @@
   
   <!-- Button centered under the restaurant grid -->
   <div style="width: 100%; display: flex; justify-content: center; margin-top: 30px; margin-bottom: 30px;">
-    <a href="#Request demo-free" class="btn btn-secondary" style="min-width: 300px; padding: 16px 48px; font-size: 1.1rem;">Book Your Table NOW</a>
+    <a href="#contact" class="btn btn-secondary" style="min-width: 300px; padding: 16px 48px; font-size: 1.1rem;">Book Your Table NOW</a>
   </div>
 </section>
 </div>
@@ -186,44 +186,43 @@
         </div>
     </section>
 
-    <!-- Categories Section -->
-    <section class="categories-section">
+    <!-- Other Services Section -->
+    <section class="other-services-section">
         <div class="container">
-             <div class="section-header">
+            <div class="section-header">
                 <h2>Other Service Reservation</h2>
                 <p>Coming up</p>
             </div>
-            <div class="categories-grid">
-                <div class="category-item">
-                    <div class="category-image">
-                        <img src="dental.png" alt="dental" />
+            <div class="services-horizontal-grid">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="dental.png" alt="Dental" />
                     </div>
-                        <span class="category-label">Dental</span>
+                    <h3 class="service-title">Dental</h3>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="dr.png" alt="Medical Consultation" />
                     </div>
-                    <div class="category-item">
-                        <div class="category-image">
-                            <img src="dr.png" alt="Medical Consultation" />
-                        </div>
-                        <span class="category-label">Medical Consultation</span>
+                    <h3 class="service-title">Medical Consultation</h3>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="barber.png" alt="Barber" />
                     </div>
-                    <div class="category-item">
-                        <div class="category-image">
-                            <img src="barber.png" alt="Barber" />
-                        </div>
-                        <span class="category-label">Barber</span>
+                    <h3 class="service-title">Barber</h3>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="Utility Service.png" alt="Utility Service" />
                     </div>
-                    <div class="category-item">
-                        <div class="category-image">
-                            <img src="Utility Service.png" alt="Utility Service" />
-                        </div>
-                        <span class="category-label">Utility Service</span>
+                    <h3 class="service-title">Utility Service</h3>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="others.png" alt="Others" />
                     </div>
-                    <div class="category-item">
-                        <div class="category-image">
-                            <img src="others.png" alt="Otherss" />
-                        </div>
-                        <span class="category-label">Others</span>
-                    </div>
+                    <h3 class="service-title">Others</h3>
                 </div>
             </div>
         </div>
@@ -356,6 +355,21 @@
             </div>
         </div>
     </footer>
+
+    <!-- Thank You Popup -->
+    <div id="thankYouPopup" class="popup-overlay">
+        <div class="popup-content">
+            <div class="popup-icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 12l2 2 4-4"/>
+                    <path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9c2.35 0 4.49.91 6.08 2.4"/>
+                </svg>
+            </div>
+            <h3 class="popup-title">Thank You!</h3>
+            <p class="popup-message">Thank you for your message, we will contact you shortly.</p>
+            <button class="popup-close" onclick="closeThankYouPopup()">Close</button>
+        </div>
+    </div>
 
     <script src="app.js"></script>
 </body>

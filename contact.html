@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html                 <a href="index.html#how-it-works" class="nav-link">What we do</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+                <a href="index.html#Request demo-free" class="nav-cta">Try NOW</a>g="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,15 +17,15 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="Home page en.html" class="navbar-brand">
+            <a href="index.html" class="navbar-brand">
                 <img src="logo png.png" alt="VoderCall Logo" style="height:40px;">
             </a>
             <div class="nav-menu" id="nav-menu">
-                <a href="Home page en.html#reservation" class="nav-link">Reservations</a>
-                <a href="Home page en.html#features" class="nav-link">AI Assistant</a>
-                <a href="Home page en.html#how-it-works" class="nav-link">What we do</a>
+                <a href="index.html#reservation" class="nav-link">Reservations</a>
+                <a href="index.html#features" class="nav-link">AI Assistant</a>
+                <a href="index.html#how-it-works" class="nav-link">What we do</a>
                 <a href="contact.html" class="nav-link active">Contact</a>
-                <a href="Home page en.html#Request demo-free" class="nav-cta">Try NOW</a>
+                <a href="index.html#contact" class="nav-cta">Try NOW</a>
             </div>
             <div class="hamburger" id="hamburger">
                 <span class="bar"></span>
@@ -223,6 +225,21 @@
             </div>
         </div>
     </footer>
+
+    <!-- Thank You Popup -->
+    <div id="thankYouPopup" class="popup-overlay">
+        <div class="popup-content">
+            <div class="popup-icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 12l2 2 4-4"/>
+                    <path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9c2.35 0 4.49.91 6.08 2.4"/>
+                </svg>
+            </div>
+            <h3 class="popup-title">Thank You!</h3>
+            <p class="popup-message">Thank you for your message, we will contact you shortly.</p>
+            <button class="popup-close" onclick="closeThankYouPopup()">Close</button>
+        </div>
+    </div>
 
     <script src="app.js"></script>
 </body>

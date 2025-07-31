@@ -180,7 +180,7 @@ Sent from VoderCall website contact form.
             console.log('Email data:', emailData);
 
             // Show success message
-            showNotification('Thank you for your message, we will get back to you shortly.', 'success');
+            showThankYouPopup();
             contactForm.reset();
         });
     }
@@ -190,6 +190,35 @@ Sent from VoderCall website contact form.
 function isValidEmail(email) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
+}
+
+// Thank You Popup Functions
+function showThankYouPopup() {
+    const popup = document.getElementById('thankYouPopup');
+    if (popup) {
+        popup.classList.add('show');
+        
+        // Close popup when clicking outside the content
+        popup.addEventListener('click', function(e) {
+            if (e.target === popup) {
+                closeThankYouPopup();
+            }
+        });
+        
+        // Close popup with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeThankYouPopup();
+            }
+        });
+    }
+}
+
+function closeThankYouPopup() {
+    const popup = document.getElementById('thankYouPopup');
+    if (popup) {
+        popup.classList.remove('show');
+    }
 }
 
 // Notification system
