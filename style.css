@@ -631,6 +631,12 @@ body {
     line-height: 1.6;
 }
 
+.step .step-remark {
+    margin-top: 12px;
+    font-size: 0.85rem;
+    color: var(--text-light);
+}
+
 .step-arrow {
     font-size: 2rem;
     color: var(--accent-color);
