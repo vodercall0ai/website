@@ -1142,6 +1142,21 @@ body {
     font-weight: 600;
 }
 
+.plain-content-wrapper {
+    display: block;
+    max-width: 900px;
+}
+
+.plain-legal-text {
+    color: var(--text-primary);
+    font-family: inherit;
+    font-size: 1rem;
+    line-height: 1.75;
+    margin: 0;
+    overflow-wrap: anywhere;
+    white-space: pre-wrap;
+}
+
 .last-updated {
     font-size: 0.95rem;
     color: var(--text-secondary);
