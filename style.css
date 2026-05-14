@@ -455,6 +455,7 @@ body {
 }
 .carousel-track {
   display: flex;
+  width: max-content;
   animation: scroll-left 30s linear infinite;
   will-change: transform;
 }
