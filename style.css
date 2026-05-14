@@ -596,7 +596,7 @@ body {
 
 .steps-container {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     gap: 40px;
     flex-wrap: wrap;
@@ -609,6 +609,10 @@ body {
     text-align: center;
     width: 300px;
     max-width: 300px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     position: relative;
 }
@@ -623,6 +627,13 @@ body {
 
 .step-with-remark .step {
     width: 100%;
+}
+
+.step-arrow {
+    align-self: center;
+    font-size: 2rem;
+    color: var(--accent-color);
+    font-weight: bold;
 }
 
 .step-number {
@@ -661,12 +672,6 @@ body {
     line-height: 1.4;
     color: var(--text-secondary);
     overflow-wrap: break-word;
-}
-
-.step-arrow {
-    font-size: 2rem;
-    color: var(--accent-color);
-    font-weight: bold;
 }
 
 /* Pricing Section */
