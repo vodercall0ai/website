@@ -41,6 +41,7 @@ body {
     font-size: 2.5rem;
     font-weight: 700;
     color: var(--primary-color);
+    margin-top: 32px;
     margin-bottom: 16px;
 }
 
@@ -1585,6 +1586,25 @@ body {
 
     .steps-container {
         flex-direction: column;
+        align-items: center;
+    }
+
+    .step {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        min-height: 0;
+    }
+
+    .step-with-remark {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .step-remark {
+        position: static;
+        margin-top: 10px;
+        padding: 0 8px;
     }
 
     .step-arrow {
@@ -1670,6 +1690,14 @@ body {
 @media (max-width: 480px) {
     .container {
         padding: 0 16px;
+    }
+
+    .section-header h2 {
+        font-size: 1.6rem;
+    }
+
+    .step {
+        padding: 24px 16px;
     }
 
     .hero {
