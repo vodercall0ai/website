@@ -583,7 +583,7 @@ body {
 
 /* How It Works Section */
 .how-it-works {
-    padding: 80px 0;
+    padding: 80px 0 80px;
     background: var(--neutral-light);
 }
 
@@ -607,6 +607,7 @@ body {
 }
 
 .step-with-remark {
+    position: relative;
     width: 300px;
     max-width: 300px;
     min-width: 0;
@@ -644,12 +645,15 @@ body {
 }
 
 .step-remark {
-    margin-top: 12px;
-    font-size: 0.85rem;
+    position: absolute;
+    top: calc(100% + 12px);
+    left: 0;
+    right: 0;
+    font-size: 0.78rem;
     font-style: italic;
     line-height: 1.4;
     color: var(--text-secondary);
-    overflow-wrap: anywhere;
+    overflow-wrap: break-word;
 }
 
 .step-arrow {
@@ -1004,7 +1008,7 @@ body {
 }
 
 .faq-section {
-    padding: 80px 0;
+    padding: 80px 0 0;
     background: var(--neutral-light);
 }
 
@@ -1126,7 +1130,7 @@ body {
 
 /* Legal Content Styles (Privacy Policy, Terms of Service) */
 .legal-content {
-    padding: 60px 0;
+    padding: 60px 0 0;
     background: var(--white);
 }
 
