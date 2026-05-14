@@ -455,7 +455,6 @@ body {
 }
 .carousel-track {
   display: flex;
-  gap: 1.5rem;
   animation: scroll-left 30s linear infinite;
   will-change: transform;
 }
@@ -465,6 +464,7 @@ body {
 .screenshot-item {
   flex: 0 0 auto;
   width: 220px;
+  margin-right: 1.5rem;
   background: #000;
   border-radius: 20px;
   overflow: hidden;
@@ -476,8 +476,8 @@ body {
   height: auto;
 }
 @media (max-width: 600px) {
-  .screenshot-item { width: 160px; }
-  .carousel-track { gap: 1rem; animation-duration: 20s; }
+  .screenshot-item { width: 160px; margin-right: 1rem; }
+  .carousel-track { animation-duration: 20s; }
 }
 
 .features-grid {

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Story - VoderCall</title>
+    <meta name="description" content="Learn about the story behind VoderCall and how we are changing the way people make reservations.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="Favicon.png">
+    <style>
+        .our-story-section {
+            padding: 80px 0;
+        }
+        .our-story-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+        .our-story-text h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            color: #1a1a2e;
+            margin-bottom: 24px;
+            line-height: 1.15;
+        }
+        .our-story-text p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #444;
+            margin-bottom: 16px;
+        }
+        .our-story-image img {
+            width: 100%;
+            border-radius: 16px;
+            display: block;
+        }
+        @media (max-width: 768px) {
+            .our-story-layout {
+                grid-template-columns: 1fr;
+                gap: 36px;
+                padding: 0 20px;
+            }
+            .our-story-text h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="https://vodercall.ai" class="navbar-brand">
+                <img src="logo png.png" alt="VoderCall Logo" style="height:40px;">
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html#reservation" class="nav-link">Reservations</a>
+                <a href="index.html#features" class="nav-link">AI Assistant</a>
+                <a href="index.html#how-it-works" class="nav-link">What we do</a>
+                <a href="our-story.html" class="nav-link active">Our Story</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Our Story Section -->
+    <section class="our-story-section">
+        <div class="our-story-layout">
+            <div class="our-story-text">
+                <h1>Our Story</h1>
+                <p>VoderCall was born from a simple frustration: making a restaurant reservation abroad shouldn't require a local phone number, fluency in another language, or the courage to navigate an unfamiliar phone call.</p>
+                <p>We built VoderCall to solve exactly that. Our AI agent makes the call on your behalf — speaking the local language, handling the back-and-forth, and confirming your booking so you don't have to.</p>
+                <p>What started as a solution for travellers has grown into a platform used by people everywhere who simply want a smarter, more effortless way to reserve a table. We are a small, passionate team committed to making every booking seamless — no matter where in the world you are headed.</p>
+            </div>
+            <div class="our-story-image">
+                <img src="assets/9.png" alt="VoderCall app in action">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 VoderCall. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-of-service.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
