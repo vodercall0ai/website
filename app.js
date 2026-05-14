@@ -382,58 +382,6 @@ document.addEventListener('DOMContentLoaded', function() {
     initVoiceWaves();
 });
 
-// Scroll to top functionality
-function addScrollToTop() {
-    const scrollButton = document.createElement('button');
-    scrollButton.innerHTML = '↑';
-    scrollButton.className = 'scroll-to-top';
-    scrollButton.style.Text = `
-        position: fixed;
-        bottom: 30px;
-        right: 30px;
-        width: 50px;
-        height: 50px;
-        background: var(--accent-color, #10B981);
-        color: white;
-        border: none;
-        border-radius: 50%;
-        font-size: 20px;
-        font-weight: bold;
-        cursor: pointer;
-        box-shadow: 0 4px 20px rgba(16, 185, 129, 0.3);
-        opacity: 0;
-        visibility: hidden;
-        transition: all 0.3s ease;
-        z-index: 1000;
-    `;
-
-    document.body.appendChild(scrollButton);
-
-    // Show/hide based on scroll position
-    window.addEventListener('scroll', function() {
-        if (window.pageYOffset > 300) {
-            scrollButton.style.opacity = '1';
-            scrollButton.style.visibility = 'visible';
-        } else {
-            scrollButton.style.opacity = '0';
-            scrollButton.style.visibility = 'hidden';
-        }
-    });
-
-    // Scroll to top on click
-    scrollButton.addEventListener('click', function() {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    });
-}
-
-// Initialize scroll to top
-document.addEventListener('DOMContentLoaded', function() {
-    addScrollToTop();
-});
-
 // Performance optimization: Lazy load images
 function initLazyLoading() {
     const images = document.querySelectorAll('img[data-src]');
