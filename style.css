@@ -443,34 +443,41 @@ body {
   }
 }
 
-/* App screenshot gallery */
-.screenshot-gallery {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 1.5rem;
+/* App screenshot carousel */
+@keyframes scroll-left {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.carousel-track-wrapper {
+  overflow: hidden;
+  width: 100%;
   margin-top: 2rem;
 }
+.carousel-track {
+  display: flex;
+  gap: 1.5rem;
+  animation: scroll-left 30s linear infinite;
+  will-change: transform;
+}
+.carousel-track:hover {
+  animation-play-state: paused;
+}
 .screenshot-item {
+  flex: 0 0 auto;
+  width: 220px;
   background: #000;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.screenshot-item:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.18);
 }
 .screenshot-item img {
   display: block;
   width: 100%;
   height: auto;
 }
-@media (max-width: 900px) {
-  .screenshot-gallery { grid-template-columns: repeat(3, 1fr); }
-}
 @media (max-width: 600px) {
-  .screenshot-gallery { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+  .screenshot-item { width: 160px; }
+  .carousel-track { gap: 1rem; animation-duration: 20s; }
 }
 
 .features-grid {
