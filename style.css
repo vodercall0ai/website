@@ -307,6 +307,13 @@ body {
   margin: 3rem auto;
   padding: 0 1rem;
 }
+
+.carousel-main-header {
+    font-size: 2.75rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    margin-bottom: 8px;
+}
 .dest-header {
   text-align: left;
   margin-bottom: 2rem;
