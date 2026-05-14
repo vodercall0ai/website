@@ -600,13 +600,16 @@ body {
     padding: 40px 30px;
     border-radius: 16px;
     text-align: center;
+    width: 300px;
     max-width: 300px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     position: relative;
 }
 
 .step-with-remark {
+    width: 300px;
     max-width: 300px;
+    min-width: 0;
     text-align: center;
 }
 
@@ -644,7 +647,9 @@ body {
     margin-top: 12px;
     font-size: 0.85rem;
     font-style: italic;
-    color: var(--text-light);
+    line-height: 1.4;
+    color: var(--text-secondary);
+    overflow-wrap: anywhere;
 }
 
 .step-arrow {
