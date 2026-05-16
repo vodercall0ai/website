@@ -496,8 +496,16 @@ body {
     background: #f8f9fb;
 }
 
+.Reservation .section-header {
+    margin-bottom: 0;
+}
+
+.Reservation .destination-section {
+    margin-bottom: 0;
+}
+
 .coverage-section {
-    padding: 80px 0;
+    padding: 40px 0 80px;
     background: #f8f9fb;
 }
 .coverage-grid {
