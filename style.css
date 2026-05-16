@@ -41,7 +41,6 @@ body {
     font-size: 2.5rem;
     font-weight: 700;
     color: var(--primary-color);
-    margin-top: 32px;
     margin-bottom: 16px;
 }
 
@@ -496,6 +495,10 @@ body {
     background: #f8f9fb;
 }
 
+.Reservation .section-header h2 {
+    margin-top: 32px;
+}
+
 .Reservation .section-header {
     margin-bottom: 0;
 }
@@ -505,7 +508,7 @@ body {
 }
 
 .coverage-section {
-    padding: 40px 0 40px;
+    padding: 20px 0 40px;
     background: #f8f9fb;
 }
 .coverage-grid {
