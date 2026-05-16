@@ -505,7 +505,7 @@ body {
 }
 
 .coverage-section {
-    padding: 40px 0 80px;
+    padding: 40px 0 40px;
     background: #f8f9fb;
 }
 .coverage-grid {
@@ -605,7 +605,7 @@ body {
 
 /* How It Works Section */
 .how-it-works {
-    padding: 80px 0 80px;
+    padding: 40px 0 80px;
     background: var(--neutral-light);
 }
 
