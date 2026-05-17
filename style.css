@@ -460,17 +460,14 @@ body {
   overflow: hidden;
   width: 100%;
   margin-top: 2rem;
+  pointer-events: none;
 }
 .carousel-track {
   display: flex;
   width: max-content;
   animation: scroll-left 30s linear infinite;
   will-change: transform;
-}
-.carousel-track:hover,
-.carousel-track:active,
-.carousel-track:focus {
-  animation-play-state: running;
+  pointer-events: none;
 }
 .screenshot-item {
   flex: 0 0 auto;
