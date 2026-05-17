@@ -32,15 +32,37 @@
             line-height: 1.15;
         }
         .our-story-text p {
-            font-size: 1.1rem;
+            font-size: 1.25rem;
             line-height: 1.8;
             color: #444;
-            margin-bottom: 16px;
+            margin-bottom: 32px;
         }
         .our-story-image img {
             width: 100%;
             border-radius: 16px;
             display: block;
+        }
+        .founder-profile {
+            margin-bottom: 24px;
+        }
+        .profile-img {
+            width: 100%;
+            border-radius: 16px;
+            display: block;
+            margin-bottom: 12px;
+        }
+        .founder-caption {
+            display: flex;
+            flex-direction: column;
+        }
+        .founder-caption strong {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #1a1a2e;
+        }
+        .founder-caption span {
+            font-size: 1rem;
+            color: #444;
         }
         @media (max-width: 768px) {
             .our-story-layout {
@@ -83,6 +105,13 @@
                 <p>With VoderCall, our AI agent calls on your behalf, speaking the local language, handling the entire conversation, and confirming your reservation. Just submit your booking request, we'll take care of the rest and keep you informed of booking status.</p>
             </div>
             <div class="our-story-image">
+                <div class="founder-profile">
+                    <img src="assets/profile.png" alt="Marco Cheung" class="profile-img">
+                    <div class="founder-caption">
+                        <strong>Marco Cheung</strong>
+                        <span>Founder</span>
+                    </div>
+                </div>
                 <img src="assets/on-the-roadtrip.jpg" alt="driving on a road trip in France">
             </div>
         </div>
