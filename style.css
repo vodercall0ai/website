@@ -912,7 +912,7 @@ body {
 
 /* Contact Page Specific Styles */
 .page-header {
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background: var(--neutral-dark);
     padding: 100px 0 40px 0;
     text-align: center;
     color: white;
