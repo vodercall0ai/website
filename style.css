@@ -465,7 +465,6 @@ body {
 .carousel-track {
   display: flex;
   width: max-content;
-  animation: scroll-left 30s linear infinite;
   will-change: transform;
   pointer-events: none;
 }
@@ -485,7 +484,6 @@ body {
 }
 @media (max-width: 600px) {
   .screenshot-item { width: 160px; margin-right: 1rem; }
-  .carousel-track { animation-duration: 20s; }
 }
 
 /* Coverage section */

@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initFormHandling();
     initHeaderScroll();
     initCategoriesNavigation();
+    initCarousel();
 });
 
 // Mobile Navigation Toggle
@@ -441,6 +442,45 @@ function initCategoriesNavigation() {
 document.addEventListener('DOMContentLoaded', function() {
     initLazyLoading();
 });
+
+// Carousel Animation (requestAnimationFrame-based to prevent pausing in app WebViews)
+function initCarousel() {
+    const track = document.querySelector('.carousel-track');
+    if (!track) return;
+
+    const durationMs = window.innerWidth <= 600 ? 20000 : 30000;
+    let position = 0;
+    let lastTimestamp = null;
+    let rafId = null;
+
+    function step(timestamp) {
+        if (lastTimestamp === null) lastTimestamp = timestamp;
+        const elapsed = timestamp - lastTimestamp;
+        lastTimestamp = timestamp;
+
+        const halfWidth = track.scrollWidth / 2;
+        if (halfWidth > 0) {
+            position += (halfWidth / durationMs) * elapsed;
+            if (position >= halfWidth) position -= halfWidth;
+            track.style.transform = 'translateX(-' + position + 'px)';
+        }
+
+        rafId = requestAnimationFrame(step);
+    }
+
+    rafId = requestAnimationFrame(step);
+
+    // Pause when tab/app is hidden to save resources, resume when visible
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            cancelAnimationFrame(rafId);
+            rafId = null;
+            lastTimestamp = null;
+        } else if (!rafId) {
+            rafId = requestAnimationFrame(step);
+        }
+    });
+}
 
 // Console welcome message
 console.log(
