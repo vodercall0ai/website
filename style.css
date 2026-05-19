@@ -1165,7 +1165,7 @@ body {
 
 /* Legal Content Styles (Privacy Policy, Terms of Service) */
 .legal-content {
-    padding: 60px 0 0;
+    padding: 60px 0 60px;
     background: var(--white);
 }
 
