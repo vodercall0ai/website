@@ -452,8 +452,6 @@ function initCarousel() {
     let position = 0;
     let lastTimestamp = null;
     let rafId = null;
-    let paused = false;
-    let lastTapTime = 0;
 
     function step(timestamp) {
         if (lastTimestamp === null) lastTimestamp = timestamp;
@@ -472,47 +470,42 @@ function initCarousel() {
 
     rafId = requestAnimationFrame(step);
 
-    // Pause when tab/app is hidden to save resources, resume when visible
-    document.addEventListener('visibilitychange', function() {
-        if (document.hidden) {
+    let userPaused = false;
+
+    function pause() {
+        if (rafId !== null) {
             cancelAnimationFrame(rafId);
             rafId = null;
             lastTimestamp = null;
-        } else if (!rafId && !paused) {
+        }
+    }
+
+    function resume() {
+        if (rafId === null && !document.hidden) {
             rafId = requestAnimationFrame(step);
+        }
+    }
+
+    // Tap to toggle pause/resume on touch devices
+    const wrapper = track.parentElement;
+    const toggleTarget = wrapper || track;
+    toggleTarget.addEventListener('click', function() {
+        userPaused = !userPaused;
+        if (userPaused) {
+            pause();
+        } else {
+            resume();
         }
     });
 
-    // Phone view: single tap pauses, double tap resumes
-    const wrapper = document.querySelector('.carousel-track-wrapper');
-    if (wrapper) {
-        wrapper.addEventListener('click', function() {
-            if (window.innerWidth > 600) return;
-
-            const now = Date.now();
-            const timeSinceLastTap = now - lastTapTime;
-            lastTapTime = now;
-
-            if (timeSinceLastTap < 300 && timeSinceLastTap > 0) {
-                // Double tap: resume
-                if (paused) {
-                    paused = false;
-                    lastTimestamp = null;
-                    if (!rafId) {
-                        rafId = requestAnimationFrame(step);
-                    }
-                }
-            } else {
-                // Single tap: pause
-                if (!paused) {
-                    paused = true;
-                    cancelAnimationFrame(rafId);
-                    rafId = null;
-                    lastTimestamp = null;
-                }
-            }
-        });
-    }
+    // Pause when tab/app is hidden to save resources, resume when visible
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            pause();
+        } else if (!userPaused) {
+            resume();
+        }
+    });
 }
 
 // Console welcome message

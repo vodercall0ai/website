@@ -467,11 +467,6 @@ body {
   animation: scroll-left 30s linear infinite;
   will-change: transform;
 }
-@media (hover: hover) {
-  .carousel-track:hover {
-    animation-play-state: paused;
-  }
-}
 .screenshot-item {
   flex: 0 0 auto;
   width: 220px;
