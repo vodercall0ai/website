@@ -457,11 +457,15 @@ body {
   width: 100%;
   margin-top: 2rem;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  user-select: none;
 }
 .carousel-track {
   display: flex;
   width: max-content;
   will-change: transform;
+  -webkit-tap-highlight-color: transparent;
 }
 .screenshot-item {
   flex: 0 0 auto;
@@ -471,11 +475,14 @@ body {
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+  -webkit-tap-highlight-color: transparent;
 }
 .screenshot-item img {
   display: block;
   width: 100%;
   height: auto;
+  pointer-events: none;
+  -webkit-user-drag: none;
 }
 @media (max-width: 600px) {
   .screenshot-item { width: 160px; margin-right: 1rem; }
