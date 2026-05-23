@@ -297,6 +297,47 @@ body {
     }
 }
 
+/* App Download Section */
+.app-download-section {
+    padding: 72px 0 56px;
+    background: var(--white);
+    text-align: center;
+}
+
+.app-download-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.app-download-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.app-download-subtitle {
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    max-width: 480px;
+}
+
+.app-store-link {
+    display: inline-block;
+    margin-top: 8px;
+}
+
+.app-store-badge {
+    height: 52px;
+    width: auto;
+    transition: opacity 0.2s ease;
+}
+
+.app-store-badge:hover {
+    opacity: 0.85;
+}
+
 /* Features Section */
 .features {
     padding: 80px 0;
