@@ -452,6 +452,8 @@ function initCarousel() {
     let position = 0;
     let lastTimestamp = null;
     let rafId = null;
+    let paused = false;
+    let lastTapTime = 0;
 
     function step(timestamp) {
         if (lastTimestamp === null) lastTimestamp = timestamp;
@@ -476,10 +478,41 @@ function initCarousel() {
             cancelAnimationFrame(rafId);
             rafId = null;
             lastTimestamp = null;
-        } else if (!rafId) {
+        } else if (!rafId && !paused) {
             rafId = requestAnimationFrame(step);
         }
     });
+
+    // Phone view: single tap pauses, double tap resumes
+    const wrapper = document.querySelector('.carousel-track-wrapper');
+    if (wrapper) {
+        wrapper.addEventListener('click', function() {
+            if (window.innerWidth > 600) return;
+
+            const now = Date.now();
+            const timeSinceLastTap = now - lastTapTime;
+            lastTapTime = now;
+
+            if (timeSinceLastTap < 300 && timeSinceLastTap > 0) {
+                // Double tap: resume
+                if (paused) {
+                    paused = false;
+                    lastTimestamp = null;
+                    if (!rafId) {
+                        rafId = requestAnimationFrame(step);
+                    }
+                }
+            } else {
+                // Single tap: pause
+                if (!paused) {
+                    paused = true;
+                    cancelAnimationFrame(rafId);
+                    rafId = null;
+                    lastTimestamp = null;
+                }
+            }
+        });
+    }
 }
 
 // Console welcome message
