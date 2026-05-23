@@ -1,4 +1,4 @@
-// VoderCall Website JavaScript
+// Vodercall Website JavaScript
 
 // DOM Content Loaded Event Listener
 document.addEventListener('DOMContentLoaded', function() {
@@ -160,7 +160,7 @@ function initFormHandling() {
             // Create email data with subject if available
             const emailSubject = subject ? 
                 `${subject.charAt(0).toUpperCase() + subject.slice(1)} - Contact Form Submission` : 
-                'New Contact Form Submission from VoderCall Website';
+                'New Contact Form Submission from Vodercall Website';
                 
             const emailData = {
                 to: 'marco@vodercall.ai',
@@ -172,7 +172,7 @@ Name: ${name}
 Email: ${email}${subject ? `\nSubject: ${subject}` : ''}
 Message: ${message}
 
-Sent from VoderCall website contact form.
+Sent from Vodercall website contact form.
                 `
             };
 
@@ -484,7 +484,7 @@ function initCarousel() {
 
 // Console welcome message
 console.log(
-    '%cVoderCall Website%c\n\nWelcome to VoderCall - Your AI Assistant for Restaurant Reservations!\n\nFor technical support, please visit: vodercall.ai/support',
+    '%cVodercall Website%c\n\nWelcome to Vodercall - Your AI Assistant for Restaurant Reservations!\n\nFor technical support, please visit: vodercall.ai/support',
     'color: #10B981; font-size: 18px; font-weight: bold;',
     'color: #6B7280; font-size: 14px;'
 );
