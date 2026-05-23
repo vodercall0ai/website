@@ -540,6 +540,8 @@ body {
     .appstore-badge {
         position: static;
         transform: none;
+        order: -1;
+        align-self: flex-end;
     }
 
     .appstore-badge img {
