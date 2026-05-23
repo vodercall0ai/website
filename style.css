@@ -516,21 +516,19 @@ body {
 
 @media (max-width: 768px) {
     .reservation-title-row {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 16px;
+        padding-right: 90px;
         margin-top: 24px;
     }
 
     .appstore-badge {
-        position: static;
+        position: absolute;
+        right: 0;
+        top: 0;
         transform: none;
-        order: -1;
     }
 
     .appstore-badge img {
-        height: 46px;
+        height: 40px;
     }
 }
 
