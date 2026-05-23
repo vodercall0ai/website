@@ -452,19 +452,15 @@ body {
 }
 
 /* App screenshot carousel */
-@keyframes scroll-left {
-  0%   { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
 .carousel-track-wrapper {
   overflow: hidden;
   width: 100%;
   margin-top: 2rem;
+  cursor: pointer;
 }
 .carousel-track {
   display: flex;
   width: max-content;
-  animation: scroll-left 30s linear infinite;
   will-change: transform;
 }
 .screenshot-item {
@@ -483,7 +479,6 @@ body {
 }
 @media (max-width: 600px) {
   .screenshot-item { width: 160px; margin-right: 1rem; }
-  .carousel-track { animation-duration: 20s; }
 }
 
 /* Coverage section */
