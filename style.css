@@ -305,7 +305,7 @@ body {
 
 .destination-section {
   max-width: 1200px;
-  margin: 3rem auto;
+  margin: 1rem auto;
   padding: 0 1rem;
 }
 
@@ -493,7 +493,7 @@ body {
 
 /* Coverage section */
 .Reservation {
-    padding: 20px 0 0;
+    padding: 8px 0 0;
     background: #f8f9fb;
 }
 
@@ -507,7 +507,7 @@ body {
 
 .reservation-title-row {
     position: relative;
-    margin-top: 32px;
+    margin-top: 16px;
 }
 
 .appstore-badge {
