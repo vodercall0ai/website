@@ -1902,6 +1902,161 @@ body {
     width: 100%;
     text-shadow: 0 1px 3px rgba(0,0,0,0.8);
 }
+:root {
+  --vc-bg-color: #ffffff; /* Clean styling context */
+  --vc-border-color: #e2e8f0; /* Soft elegant split lines */
+  --vc-text-dark: #0f172a;
+  --vc-text-muted: #475569;
+  --vc-font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  
+  /* Section widths configured to seamlessly match top-level navigation blocks */
+  --site-max-width: 1280px; 
+  --site-padding-inline: 40px;
+}
+
+.vodercall-faq-section {
+  background-color: var(--vc-bg-color);
+  padding-block: 100px 120px; /* Ample breathing room before the footer baseline */
+  font-family: var(--vc-font-family);
+  width: 100%;
+  border-top: 1px solid var(--vc-border-color);
+}
+
+.faq-site-container {
+  width: 100%;
+  max-width: var(--site-max-width);
+  margin-inline: auto;
+  padding-inline: var(--site-padding-inline);
+  box-sizing: border-box;
+}
+
+.faq-header-wrapper {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.faq-subtitle {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: var(--vc-text-dark);
+  margin-bottom: 12px;
+}
+
+.faq-title {
+  font-size: 42px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--vc-text-dark);
+  letter-spacing: -1px;
+  margin: 0;
+}
+
+/* Accordion Box Wrapper */
+.faq-accordion-wrapper {
+  max-width: 800px; /* Generous width matching standard elegant web FAQs */
+  margin-inline: auto;
+  width: 100%;
+}
+
+.faq-accordion {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Custom DoggieLawn Minimal Splitter Style Rows */
+.faq-item {
+  border-bottom: 1px solid var(--vc-border-color);
+}
+
+.faq-item:first-child {
+  border-top: 1px solid var(--vc-border-color);
+}
+
+/* The Trigger Row Layout */
+.faq-trigger {
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 28px 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  text-align: left;
+  transition: opacity 0.2s ease;
+}
+
+.faq-trigger:hover {
+  opacity: 0.85;
+}
+
+.faq-question {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--vc-text-dark);
+  padding-right: 24px;
+}
+
+/* Smooth Rotating Chevron Dropdown Button */
+.faq-icon-chevron {
+  width: 24px;
+  height: 24px;
+  color: var(--vc-text-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  flex-shrink: 0;
+}
+
+/* Rotates chevron upwards when open (as seen on doggielawn.com/pages/faq) */
+.faq-item.active .faq-icon-chevron {
+  transform: rotate(-180deg);
+}
+
+.faq-icon-chevron svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Smooth expansion physics */
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.faq-content-inner {
+  padding: 0 8px 28px 8px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--vc-text-muted);
+}
+
+/* Mobile responsive padding shifts */
+@media (max-width: 640px) {
+  :root {
+    --site-padding-inline: 24px;
+  }
+  .vodercall-faq-section {
+    padding-block: 64px 80px;
+  }
+  .faq-title {
+    font-size: 32px;
+  }
+  .faq-question {
+    font-size: 16px;
+  }
+  .faq-trigger {
+    padding-block: 20px;
+  }
+  .faq-content-inner {
+    padding-bottom: 20px;
+  }
+}
 
 /* Responsive design for services */
 @media (max-width: 1200px) {
