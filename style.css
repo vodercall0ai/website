@@ -1735,13 +1735,13 @@ body {
     .footer-content {
         grid-template-columns: 1fr;
         gap: 40px;
-        text-align: center;
+        text-align: left;
     }
 
     .footer-bottom {
         flex-direction: column;
         gap: 20px;
-        text-align: center;
+        text-align: left;
     }
 }
 
