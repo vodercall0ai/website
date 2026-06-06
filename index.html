@@ -154,202 +154,64 @@
         </div>
     </section>
 
-<!-- START FAQ SECTION  -->
-<section class="vodercall-faq-section">
-  <div class="faq-site-container">
-    
-    <div class="faq-header-wrapper">
-      <h2 class="faq-title">Frequently Asked Questions</h2>
-    </div>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Frequently Asked Questions | Vodercall</title>
-  <style>
-    :root {
-      --vc-bg-color: #ffffff;
-      --vc-border-color: #e2e8f0;
-      --vc-text-dark: #0f172a;
-      --vc-text-muted: #475569;
-      --vc-font-family: 'Inter', system-ui, -apple-system, sans-serif;
-      --site-max-width: 1280px; 
-      --site-padding-inline: 40px;
-    }
-
-    body {
-      margin: 0;
-      background-color: var(--vc-bg-color);
-      font-family: var(--vc-font-family);
-      -webkit-font-smoothing: antialiased;
-    }
-
-    .vodercall-faq-page {
-      padding-block: 80px 120px;
-      width: 100%;
-    }
-
-    .faq-site-container {
-      width: 100%;
-      max-width: var(--site-max-width);
-      margin-inline: auto;
-      padding-inline: var(--site-padding-inline);
-      box-sizing: border-box;
-    }
-
-    .faq-header-layout {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-      border-bottom: 2px solid var(--vc-text-dark);
-      padding-bottom: 24px;
-      margin-bottom: 40px;
-    }
-
-    .faq-subtitle {
-      font-size: 11px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-weight: 700;
-      color: var(--vc-text-dark);
-      margin-bottom: px;
-    }
-
-    .faq-title {
-      font-size: 42px;
-      line-height: 1.15;
-      font-weight: 700;
-      color: var(--primary-color);
-      letter-spacing: -1px;
-      margin: 0;
-    }
-
-    .faq-badge-button {
-      display: inline-block;
-      font-size: 13px;
-      font-weight: 700;
-      letter-spacing: 1px;
-      color: var(--vc-text-dark);
-      border: 1.5px solid var(--vc-text-dark);
-      padding: 8px 18px;
-      border-radius: 20px;
-      text-transform: uppercase;
-      text-decoration: none;
-      transition: background-color 0.2s, color 0.2s;
-    }
-
-    .faq-badge-button:hover {
-      background-color: var(--vc-text-dark);
-      color: #ffffff;
-    }
-
-    .faq-accordion-wrapper {
-      max-width: 900px;
-      margin-inline: auto;
-      width: 100%;
-    }
-
-    .faq-accordion {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .faq-item {
-      border-bottom: 1px solid var(--vc-border-color);
-    }
-
-    .faq-item:first-child {
-      border-top: 1px solid var(--vc-border-color);
-    }
-
-    .faq-trigger {
-      width: 100%;
-      background: none;
-      border: none;
-      outline: none;
-      padding: 24px 8px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      cursor: pointer;
-      text-align: left;
-    }
-
-    .faq-question {
-      font-size: 16px;
-      font-weight: 600;
-      color: var(--primary-color);
-      padding-right: 24px;
-      line-height: 1.4;
-    }
-
-    .faq-icon-chevron {
-      width: 20px;
-      height: 20px;
-      color: var(--vc-text-dark);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      flex-shrink: 0;
-    }
-
-    .faq-item.active .faq-icon-chevron {
-      transform: rotate(-180deg);
-    }
-
-    .faq-icon-chevron svg {
-      width: 100%;
-      height: 100%;
-    }
-
-    .faq-content {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    .faq-content-inner {
-      padding: 0 8px 24px 8px;
-      font-size: 15px;
-      line-height: 1.6;
-      color: var(--vc-text-muted);
-    }
-
-    @media (max-width: 768px) {
-      .faq-header-layout {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 16px;
-      }
-    }
-
-    @media (max-width: 640px) {
-      :root { --site-padding-inline: 24px; }
-      .vodercall-faq-page { padding-block: 40px 80px; }
-      .faq-title { font-size: 32px; }
-    }
-  </style>
-</head>
-<body>
-
-<main class="vodercall-faq-page">
-  <div class="faq-site-container">
-    <div class="faq-accordion-wrapper">
+    <!-- START FAQ SECTION  -->
+      <section class="vodercall-faq-section">
+      <div class="faq-site-container">
+       <div class="section-header">
+         <h2>Frequently Asked Questions</h2>
       <div class="faq-accordion">
         <div class="faq-item">
           <button class="faq-trigger" aria-expanded="false">
-            <span class="faq-question">Q1: What is Vodercall, and how does it help me book a restaurant?</span>
+            <span class="faq-question">Q1: How does Vodercall help me book a restaurant?</span>
             <span class="faq-icon-chevron"><svg viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
           </button>
-          <div class="faq-content"><div class="faq-content-inner">Vodercall is an AI-powered table reservation assistant app (AI Booking Agent). Simply enter your target restaurant name, select your desired date, time, number of guests, and any special requests on the app. Our AI will then make a live voice call directly to the restaurant in Hong Kong or Bangkok, converse with the staff, and secure your reservation. The entire process is fully automated, saving you from waiting in cross-border lines or stressing over failed restaurant bookings overseas.</div></div>
+          <div class="faq-content"><div class="faq-content-inner">Vodercall is an AI-powered table reservation assistant app (AI Booking Agent). The entire process is fully automated, saving you from waiting in cross-border lines or stressing over failed restaurant bookings overseas.</div></div>
         </div>
-      </div>
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false">
+            <span class="faq-question">Q2: Do I need to download an app to use this service? </span>
+            <span class="faq-icon-chevron"><svg viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </button>
+          <div class="faq-content"><div class="faq-content-inner">Yes, you need to download the "Vodercall" app at App Store or Google Play. </div></div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false">
+            <span class="faq-question">Q3: How long does the AI take to book a restaurant? When will I know the results?</span>
+            <span class="faq-icon-chevron"><svg viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </button>
+          <div class="faq-content"><div class="faq-content-inner">Once we receive your request, the AI will place the call within 5 to 15 minutes, provided the restaurant is currently open. As soon as the call connects and the booking is confirmed, you will receive an instant email confirmation and a status update within the app. 
+        </div>
     </div>
   </div>
 </section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const items = document.querySelectorAll('.faq-item');
+
+    items.forEach(item => {
+      const trigger = item.querySelector('.faq-trigger');
+      const content = item.querySelector('.faq-content');
+
+      trigger.addEventListener('click', () => {
+        const currentlyActive = item.classList.contains('active');
+
+        if (currentlyActive) {
+          item.classList.remove('active');
+          trigger.setAttribute('aria-expanded', 'false');
+          content.style.maxHeight = '0';
+        } else {
+          item.classList.add('active');
+          trigger.setAttribute('aria-expanded', 'true');
+          content.style.maxHeight = content.scrollHeight + 'px';
+        }
+      });
+    });
+  });
+</script>
+</body>
+</html>
 <!-- END FAQ SECTION -->
     
     <!-- Footer -->
