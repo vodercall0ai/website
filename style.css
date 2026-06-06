@@ -2160,33 +2160,7 @@ html {
     animation: fadeInUp 0.6s ease forwards;
 }
 
-
-<!-- START FAQ SECTION  -->
-<section class="vodercall-faq-section">
-  <div class="faq-site-container">
-    
-    <div class="faq-header-wrapper">
-      <h2 class="faq-title">Frequently Asked Questions</h2>
-    </div>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Frequently Asked Questions | Vodercall</title>
-  <style>
-    :root {
-      --vc-bg-color: #ffffff;
-      --vc-border-color: #e2e8f0;
-      --vc-text-dark: #0f172a;
-      --vc-text-muted: #475569;
-      --vc-font-family: 'Inter', system-ui, -apple-system, sans-serif;
-      --site-max-width: 1280px; 
-      --site-padding-inline: 40px;
-    }
-
-    body {
+body {
       margin: 0;
       background-color: var(--vc-bg-color);
       font-family: var(--vc-font-family);
@@ -2338,27 +2312,26 @@ html {
       .vodercall-faq-page { padding-block: 40px 80px; }
       .faq-title { font-size: 32px; }
     }
-        
+    
     .faq-action-container {
-    text-align: center;
-    margin-top: 30px;
+      text-align: center;
+      margin-top: 30px;
     }
 
     .btn-primary {
-    display: inline-block;
-    background-color: #007bff; /* Match your Vodercall blue theme color */
-    color: #ffffff;
-    padding: 12px 30px;
-    text-decoration: none;
-    border-radius: 25px; /* Gives it a modern, rounded app-like feel */
-    font-weight: 600;
-    transition: background-color 0.3s ease;
+      display: inline-block;
+      background-color: #007bff; /* Match your Vodercall blue theme color */
+      color: #ffffff;
+      padding: 12px 30px;
+      text-decoration: none;
+      border-radius: 25px; /* Gives it a modern, rounded app-like feel */
+      font-weight: 600;
+      transition: background-color 0.3s ease;
     }
 
     .btn-primary:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+      background-color: #0056b3; /* Darker blue on hover */
     }
-
- </style>
+  </style>
 </head>
 <body>
