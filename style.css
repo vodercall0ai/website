@@ -674,6 +674,7 @@ body {
     width: 300px;
     max-width: 300px;
     height: 320px;
+    margin-bottom: 40px
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -2332,3 +2333,81 @@ body {
     .btn-primary:hover {
       background-color: #0056b3; /* Darker blue on hover */
     }
+
+<style>
+.why-choose-section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.section-title {
+    text-align: center;
+    color: #1e3a8a; /* 配合你原本的深藍色標題 */
+    font-size: 32px;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.benefits-grid {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    flex-wrap: wrap; /* 確保手機版會自動換行 */
+}
+
+.benefit-card {
+    flex: 1;
+    min-width: 280px; /* 手機版降到這個寬度以下時會自動疊上去 */
+    background: #ffffff;
+    padding: 30px 24px;
+    border-radius: 16px; /* 配合你原有的圓角風格 */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* 輕微的高級陰影 */
+    text-align: left;
+    transition: transform 0.3s ease;
+    border: 1px solid #f3f4f6;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px); /* 滑鼠滑過時有微浮動效果 */
+}
+
+.benefit-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #10b981; /* 配合你原本 Download 按鈕的綠色調 */
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.benefit-card h3 {
+    color: #1e3a8a;
+    font-size: 20px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.benefit-card p {
+    color: #6b7280; /* 灰色的說明內文 */
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* 針對手機版排版的額外優化 */
+@media (max-width: 768px) {
+    .benefits-grid {
+        flex-direction: column;
+    }
+    .section-title {
+        font-size: 26px;
+    }
+}
+</style>

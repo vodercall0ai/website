@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vodercall - AI-powered Restaurant Booking APP</title>
+    <title>Vodercall - Your Overseas Restaurant Booking APP | No Local Number Needed</title>
     <meta name="description"
-        content="The ultimate AI booking assistant for travelers. Easily reserve tables in Hong Kong and Bangkok. Our AI voice agent calls local restaurants for you, breaking language barriers. Book 24/7 from anywhere in the world.">
+        content="Easily reserve tables overseas. No need overseas phone numbers, breaking language barriers. Book 24/7 from anywhere in the world.">
     <meta property="og:title" content="Vodercall - AI-powered Overseas Restaurant Booking APP">
     <meta property="og:description"
-        content="Traveling to Hong Kong or Bangkok? Let our AI Agent call and book tables for you in the local language. Skip the long-distance calls and language barriers. Secure your seats 100% automatically!">
+        content="Traveling overase? Let our AI Agent call and book tables for you in the local language. Skip the long-distance calls and language barriers. Secure your seats 100% automatically!">
     <meta property="og:image" content="https://yourdomain.com/assets/app-preview.jpg">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,10 +46,14 @@
                 <img src="logo png.png" alt="Vodercall Logo" style="height:40px;">
             </a>
             <div class="nav-menu" id="nav-menu">
-                <a href="#how-it-works" class="nav-link">How does it work?</a>
+                <a href="#how-it-works" class="nav-link">How To Book Overseas Restaurants?</a>
                 <a href="https://apps.apple.com/us/app/vodercall/id6761742021" target="_blank" rel="noopener noreferrer"
                     class="nav-link">Apps</a>
                 <a href="mailto:support@vodercall.ai" class="nav-link">Contact</a>
+                <a href="https://apps.apple.com/us/app/vodercall/id6761742021" target="_blank"
+                        rel="noopener noreferrer" class="appstore-badge">
+                        <img src="assets/black.svg" alt="Download on the App Store">
+                </a>
 
             </div>
             <div class="hamburger" id="hamburger">
@@ -60,17 +64,13 @@
         </div>
     </nav>
 
-
     <!-- Home Restaurant category html start -->
     <section id="reservation" class="Reservation">
         <div class="container">
             <div class="section-header">
                 <div class="reservation-title-row">
-                    <h2>AI-powered Table Reservation</h2>
-                    <a href="https://apps.apple.com/us/app/vodercall/id6761742021" target="_blank"
-                        rel="noopener noreferrer" class="appstore-badge">
-                        <img src="assets/black.svg" alt="Download on the App Store">
-                    </a>
+                    <h2> AI Powered Overseas Restaurant Reservations APP</h2>
+                    
                 </div>
                 <section class="destination-section">
 
@@ -105,8 +105,163 @@
     </section>
     <!-- activity html end -->
 
+    <section class="why-choose-section">
+    <h2 class="section-title">Why Choose Vodercall?</h2>
+    
+    <div class="benefits-grid">
+        <div class="benefit-card">
+            <div class="benefit-icon">✓</div>
+            <h3>Zero Language Barriers</h3>
+            <p>Don't speak the local language? Our advanced AI handles the phone conversation naturally in Japanese, Thai, or the local tongue on your behalf.</p>
+        </div>
+
+        <div class="benefit-card">
+            <div class="benefit-icon">✓</div>
+            <h3>No Local SIM Required</h3>
+            <p>Forget buying expensive local calling cards or roaming plans. You can reserve any phone-only restaurant with just an internet connection.</p>
+        </div>
+
+        <div class="benefit-card">
+            <div class="benefit-icon">✓</div>
+            <h3>24/7 Booking, Anytime</h3>
+            <p>No more staying up late to match foreign time zones. Place your reservation request whenever you want, and our AI calls during restaurant hours.</p>
+        </div>
+    </div>
+<style>
+.why-choose-section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.section-title {
+    text-align: center;
+    color: #1e3a8a; /* 配合你原本的深藍色標題 */
+    font-size: 32px;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.benefits-grid {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    flex-wrap: wrap; /* 確保手機版會自動換行 */
+}
+
+.benefit-card {
+    flex: 1;
+    min-width: 280px; /* 手機版降到這個寬度以下時會自動疊上去 */
+    background: #ffffff;
+    padding: 30px 24px;
+    border-radius: 16px; /* 配合你原有的圓角風格 */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* 輕微的高級陰影 */
+    text-align: left;
+    transition: transform 0.3s ease;
+    border: 1px solid #f3f4f6;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px); /* 滑鼠滑過時有微浮動效果 */
+}
+
+.benefit-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #10b981; /* 配合你原本 Download 按鈕的綠色調 */
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.benefit-card h3 {
+    color: #1e3a8a;
+    font-size: 20px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.benefit-card p {
+    color: #6b7280; /* 灰色的說明內文 */
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* 針對手機版排版的額外優化 */
+@media (max-width: 768px) {
+    .benefits-grid {
+        flex-direction: column;
+    }
+    .section-title {
+        font-size: 26px;
+    }
+}
+</style>
+</section>
+
+        <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>How To Book Overseas Restaurants?</h2>
+            </div>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Search & Select</h3>
+                        <p>Select restaurant and tell us your dining preferences.</p>
+                    </div>
+                </div>
+                <div class="step-arrow">→</div>
+                <div class="step-with-remark">
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>AI makes the Call</h3>
+                            <p>Our AI Voice Assistant will handle by calling* the restaurant on your behalf.
+                            </p>
+                        </div>
+                    </div>
+                    <p class="step-remark" >*Only restaurants without credit card deposit/guarantee requirement will be
+                        proceeded.</p>
+                </div>
+                <div class="step-arrow">→</div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Reserve your table</h3>
+                        <p>Receive booking status update by Email and/or App Push notification.</p>   
+                        <div style="height: 24px;"></div>         
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <div
+                        style="text-align: center; margin-top: 60px; margin-bottom: 6px; display: block; width: 100%;">
+                        <a href="https://apps.apple.com/us/app/vodercall/id6761742021" style="
+            display: inline-block;
+            background-color: #10B981; 
+            color: #ffffff;
+            padding: 12px 32px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+        ">Reserve Your Table NOW</a>
+         </div>
+        </section>
+
     <!-- Coverage Section -->
-    <section class="coverage-section">
+        <section class="coverage-section">
         <div class="container">
             <div class="section-header">
                 <h2>Supported Call Countries/Regions</h2>
@@ -127,49 +282,7 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Features Section - MOVED BEFORE HOW IT WORKS -->
-    <!-- How It Works Section - MOVED AFTER FEATURES -->
-    <section id="how-it-works" class="how-it-works">
-        <div class="container">
-            <div class="section-header">
-                <h2>Search, Book and Reserve</h2>
-                <p>No Local Phone Number Required</p>
-            </div>
-            <div class="steps-container">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <div class="step-content">
-                        <h3>Search & Select</h3>
-                        <p>Select restaurant and submit your dining preferences.</p>
-                    </div>
-                </div>
-                <div class="step-arrow">→</div>
-                <div class="step-with-remark">
-                    <div class="step">
-                        <div class="step-number">2</div>
-                        <div class="step-content">
-                            <h3>AI makes the Call</h3>
-                            <p>Our AI Voice Assistant will contact* the restaurant and handle booking on your behalf.
-                            </p>
-                        </div>
-                    </div>
-                    <p class="step-remark">*Only restaurants without credit card deposit/guarantee requirement will be
-                        proceeded.</p>
-                </div>
-                <div class="step-arrow">→</div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <div class="step-content">
-                        <h3>Reserve your table</h3>
-                        <p>You will receive booking status update by Email and/or App Push Notification, no matter
-                            confirmed booking or not!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
     <!-- START FAQ SECTION  -->
     <section class="vodercall-faq-section">
@@ -200,8 +313,8 @@
                                 </svg></span>
                         </button>
                         <div class="faq-content" style="text-align: left;">
-                            <div class="faq-content-inner">Yes, you need to download the <a
-                                    href="https://apps.apple.com/us/app/vodercall/id6761742021">"Vodercall" </a> App at
+                            <div class="faq-content-inner">Yes, you need to download <a
+                                    href="https://apps.apple.com/us/app/vodercall/id6761742021">Vodercall </a> App at
                                 App Store . </div>
                         </div>
                     </div>
