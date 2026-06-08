@@ -1915,6 +1915,81 @@ body {
   --site-padding-inline: 40px;
 }
 
+
+.pain-section {
+    background-color: #F9FAFB;
+    padding: 80px 20px;
+    text-align: center;
+}
+.pain-title {
+    color: #1E3A8A;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+.pain-subtitle {
+    color: #6B7280;
+    font-size: 16px;
+    max-width: 600px;
+    margin: 0 auto 50px auto;
+}
+.pain-grid {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.pain-card {
+    flex: 1;
+    min-width: 280px;
+    max-width: 360px;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    padding: 32px 24px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+    border: 1px solid #E5E7EB;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.pain-icon-bad {
+    font-size: 28px;
+    margin-bottom: 16px;
+}
+.pain-card h3 {
+    color: #1F2937;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 12px 0;
+}
+.pain-card p {
+    color: #4B5563;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0 0 20px 0;
+}
+.pain-card-sol {
+    border-top: 1px dashed #E5E7EB;
+    padding-top: 16px;
+    color: #059669;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+@media (max-width: 768px) {
+    .pain-section {
+        padding: 50px 20px;
+    }
+    .pain-title {
+        font-size: 26px;
+    }
+}
+
 .vodercall-faq-section {
   background-color: var(--vc-bg-color);
   padding-block: 100px 120px; /* Ample breathing room before the footer baseline */
@@ -2412,3 +2487,4 @@ body {
     }
 }
 </style>
+
