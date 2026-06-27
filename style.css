@@ -30,11 +30,13 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    gap: 24px;
 }
 
 .section-header {
     text-align: center;
     margin-bottom: 30px;
+    margin-top: 40px;
 }
 
 .section-header h2 {
@@ -45,7 +47,7 @@ body {
 }
 
 .section-header p {
-    font-size: 1.125rem;
+    font-size: 1.5rem;
     color: var(--text-secondary);
     max-width: 600px;
     margin: 0 auto;
@@ -2456,14 +2458,14 @@ body {
 
 .benefit-card h3 {
     color: #1e3a8a;
-    font-size: 20px;
+    font-size: 25px;
     margin-bottom: 12px;
     font-weight: 600;
 }
 
 .benefit-card p {
     color: #6b7280; /* 灰色的說明內文 */
-    font-size: 15px;
+    font-size: 22px;
     line-height: 1.6;
     margin: 0;
 }
