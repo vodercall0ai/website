@@ -34,7 +34,7 @@ body {
 
 .section-header {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 .section-header h2 {
@@ -654,15 +654,15 @@ body {
 
 /* How It Works Section */
 .how-it-works {
-    padding: 40px 0 80px;
+    padding: 2ch 0 20px;
     background: var(--neutral-light);
 }
 
 .steps-container {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
@@ -670,15 +670,15 @@ body {
     background: var(--white);
     padding: 40px 30px;
     border-radius: 16px;
-    text-align: left;
+    text-align: center;
     width: 300px;
-    max-width: 300px;
-    height: 320px;
-    margin-bottom: 40px
+    max-width: 300x;
+    height: 300px;
+    margin-bottom: 0px
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     position: relative;
 }
@@ -688,7 +688,7 @@ body {
     width: 300px;
     max-width: 300px;
     min-width: 0;
-    text-align: left;
+    text-align: center;
 }
 
 .step-with-remark .step {
@@ -702,32 +702,21 @@ body {
     font-weight: bold;
 }
 
-.step-number {
-    width: 60px;
-    height: 60px;
-    background: var(--accent-color);
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin: 0 0 24px;
-}
 
 .step h3 {
     font-size: 1.25rem;
     font-weight: 600;
     color: var(--primary-color);
     margin-bottom: 16px;
-    text-align: left;
+    text-align: center;
 }
 
 .step p {
-    color: var(--text-secondary);
+    color: #4B5563;
     line-height: 1.6;
-    text-align: left;
+    text-align: cente;
+    font-size: 18px;
+    margin: 0 0 10px;
 }
 
 .step-remark {
@@ -1492,14 +1481,14 @@ body {
 .footer {
     background: var(--neutral-dark);
     color: var(--neutral-light);
-    padding: 60px 0 20px;
+    padding: 60px 0 0;
 }
 
 .footer-content {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 60px;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
 }
 
 .footer-brand h3 {
@@ -1522,7 +1511,7 @@ body {
 .footer-column h4 {
     color: var(--neutral-light);
     font-weight: 600;
-    margin-bottom: 16px;
+    margin-bottom: 0px;
 }
 
 .footer-column ul {
@@ -1530,7 +1519,7 @@ body {
 }
 
 .footer-column ul li {
-    margin-bottom: 8px;
+    margin-bottom: 0px;
 }
 
 .footer-column ul li a {
@@ -1741,7 +1730,7 @@ body {
 
     .footer-bottom {
         flex-direction: column;
-        gap: 20px;
+        gap: 0px;
         text-align: left;
     }
 }
@@ -2415,6 +2404,7 @@ body {
     padding: 60px 20px;
     max-width: 1200px;
     margin: 0 auto;
+    margin bottom: 10px
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
@@ -2437,10 +2427,10 @@ body {
     flex: 1;
     min-width: 280px; /* 手機版降到這個寬度以下時會自動疊上去 */
     background: #ffffff;
-    padding: 30px 24px;
+    padding: 10px 24px;
     border-radius: 16px; /* 配合你原有的圓角風格 */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* 輕微的高級陰影 */
-    text-align: left;
+    text-align: center;
     transition: transform 0.3s ease;
     border: 1px solid #f3f4f6;
 }
@@ -2460,6 +2450,7 @@ body {
     justify-content: center;
     font-weight: bold;
     font-size: 20px;
+    text-align: center;
     margin-bottom: 20px;
 }
 
@@ -2483,6 +2474,105 @@ body {
         flex-direction: column;
     }
     .section-title {
+        font-size: 26px;
+    }
+}
+
+
+.testimonial-section {
+    background-color: #FFFFFF;
+    padding: 80px 20px;
+    text-align: center;
+}
+.testimonial-title {
+    color: #1E3A8A;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+.testimonial-subtitle {
+    color: #6B7280;
+    font-size: 16px;
+    max-width: 600px;
+    margin: 0 auto 50px auto;
+}
+.testimonial-grid {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.testimonial-card {
+    flex: 1;
+    min-width: 280px;
+    max-width: 360px;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    padding: 28px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+    border: 1px solid #F3F4F6;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+}
+.testimonial-card:hover {
+    transform: translateY(-5px); /* 滑鼠滑過時有微微浮起的高級動態效果 */
+}
+.stars {
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+.review-text {
+    color: #4B5563;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0 0 24px 0;
+    font-style: italic;
+}
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-top: 1px solid #F3F4F6;
+    padding-top: 16px;
+}
+.avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 14px;
+}
+.av-indigo { background-color: #E0E7FF; color: #4338CA; }
+.av-green { background-color: #D1FAE5; color: #065F46; }
+.av-red { background-color: #FEE2E2; color: #991B1B; }
+
+.user-details h4 {
+    color: #1F2937;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 0 4px 0;
+}
+.badge {
+    color: #6B7280;
+    font-size: 11px;
+    background-color: #F3F4F6;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-weight: 500;
+}
+@media (max-width: 768px) {
+    .testimonial-section {
+        padding: 50px 20px;
+    }
+    .testimonial-title {
         font-size: 26px;
     }
 }
