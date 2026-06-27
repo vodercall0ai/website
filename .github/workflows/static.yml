@@ -25,9 +25,9 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-artifact@v7
         with:
-          path: '.' # Uploads entire repository. Change if your build goes to a /dist or /build folder
+          path: './dist
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
