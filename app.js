@@ -140,7 +140,7 @@ function initFormHandling() {
             } else if (contactName) {
                 // Homepage form
                 name = contactName;
-            }t666665
+            }
             
             const email = formData.get('contactEmail');
             const message = formData.get('contactMessage');

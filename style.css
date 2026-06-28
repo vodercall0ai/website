@@ -1,4 +1,4 @@
- /* Reset and Base Styles */
+/* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -27,7 +27,7 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 20px;
     gap: 24px;
@@ -40,14 +40,14 @@ body {
 }
 
 .section-header h2 {
-    font-size: 2.5rem;
+    font-size: 35px;
     font-weight: 700;
     color: var(--primary-color);
     margin-bottom: 16px;
 }
 
 .section-header p {
-    font-size: 1.5rem;
+    font-size: 22px;
     color: var(--text-secondary);
     max-width: 600px;
     margin: 0 auto;
@@ -656,7 +656,7 @@ body {
 
 /* How It Works Section */
 .how-it-works {
-    padding: 2ch 0 20px;
+    padding: 20px 0 20px;
     background: var(--neutral-light);
 }
 
@@ -674,9 +674,9 @@ body {
     border-radius: 16px;
     text-align: center;
     width: 300px;
-    max-width: 300x;
+    max-width: 300px;
     height: 300px;
-    margin-bottom: 0px
+    margin-bottom: 0px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -706,7 +706,7 @@ body {
 
 
 .step h3 {
-    font-size: 1.25rem;
+    font-size: 25px;
     font-weight: 600;
     color: var(--primary-color);
     margin-bottom: 16px;
@@ -716,8 +716,8 @@ body {
 .step p {
     color: #4B5563;
     line-height: 1.6;
-    text-align: cente;
-    font-size: 18px;
+    text-align: center;
+    font-size: 20px;
     margin: 0 0 10px;
 }
 
@@ -1483,13 +1483,12 @@ body {
 .footer {
     background: var(--neutral-dark);
     color: var(--neutral-light);
-    padding: 60px 0 0;
+    padding: 60px 0 40px;
 }
 
 .footer-content {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 60px;
     margin-bottom: 0px;
 }
 
@@ -2099,7 +2098,10 @@ body {
   padding: 0 8px 28px 8px;
   line-height: 1.6;
   color: #4b5563;
-  p style="margin: 0 0 12px 0;
+}
+
+.faq-content-inner p {
+  margin: 0 0 12px 0;
 }
 
 /* Mobile responsive padding shifts */
@@ -2401,182 +2403,5 @@ body {
       background-color: #0056b3; /* Darker blue on hover */
     }
 
-<style>
-.why-choose-section {
-    padding: 60px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    margin bottom: 10px
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-}
-
-.section-title {
-    text-align: center;
-    color: #1e3a8a; /* 配合你原本的深藍色標題 */
-    font-size: 32px;
-    margin-bottom: 40px;
-    font-weight: 700;
-}
-
-.benefits-grid {
-    display: flex;
-    gap: 24px;
-    justify-content: space-between;
-    flex-wrap: wrap; /* 確保手機版會自動換行 */
-}
-
-.benefit-card {
-    flex: 1;
-    min-width: 280px; /* 手機版降到這個寬度以下時會自動疊上去 */
-    background: #ffffff;
-    padding: 10px 24px;
-    border-radius: 16px; /* 配合你原有的圓角風格 */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* 輕微的高級陰影 */
-    text-align: center;
-    transition: transform 0.3s ease;
-    border: 1px solid #f3f4f6;
-}
-
-.benefit-card:hover {
-    transform: translateY(-5px); /* 滑鼠滑過時有微浮動效果 */
-}
-
-.benefit-icon {
-    width: 40px;
-    height: 40px;
-    background-color: #10b981; /* 配合你原本 Download 按鈕的綠色調 */
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    font-size: 20px;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.benefit-card h3 {
-    color: #1e3a8a;
-    font-size: 25px;
-    margin-bottom: 12px;
-    font-weight: 600;
-}
-
-.benefit-card p {
-    color: #6b7280; /* 灰色的說明內文 */
-    font-size: 22px;
-    line-height: 1.6;
-    margin: 0;
-}
-
-/* 針對手機版排版的額外優化 */
-@media (max-width: 768px) {
-    .benefits-grid {
-        flex-direction: column;
-    }
-    .section-title {
-        font-size: 26px;
-    }
-}
-
-
-.testimonial-section {
-    background-color: #FFFFFF;
-    padding: 80px 20px;
-    text-align: center;
-}
-.testimonial-title {
-    color: #1E3A8A;
-    font-size: 32px;
-    font-weight: 700;
-    margin-bottom: 12px;
-}
-.testimonial-subtitle {
-    color: #6B7280;
-    font-size: 16px;
-    max-width: 600px;
-    margin: 0 auto 50px auto;
-}
-.testimonial-grid {
-    display: flex;
-    justify-content: center;
-    gap: 24px;
-    max-width: 1200px;
-    margin: 0 auto;
-    flex-wrap: wrap;
-}
-.testimonial-card {
-    flex: 1;
-    min-width: 280px;
-    max-width: 360px;
-    background-color: #FFFFFF;
-    border-radius: 16px;
-    padding: 28px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
-    border: 1px solid #F3F4F6;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: transform 0.3s ease;
-}
-.testimonial-card:hover {
-    transform: translateY(-5px); /* 滑鼠滑過時有微微浮起的高級動態效果 */
-}
-.stars {
-    font-size: 14px;
-    margin-bottom: 16px;
-}
-.review-text {
-    color: #4B5563;
-    font-size: 14px;
-    line-height: 1.6;
-    margin: 0 0 24px 0;
-    font-style: italic;
-}
-.user-info {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    border-top: 1px solid #F3F4F6;
-    padding-top: 16px;
-}
-.avatar {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 600;
-    font-size: 14px;
-}
-.av-indigo { background-color: #E0E7FF; color: #4338CA; }
-.av-green { background-color: #D1FAE5; color: #065F46; }
-.av-red { background-color: #FEE2E2; color: #991B1B; }
-
-.user-details h4 {
-    color: #1F2937;
-    font-size: 15px;
-    font-weight: 600;
-    margin: 0 0 4px 0;
-}
-.badge {
-    color: #6B7280;
-    font-size: 11px;
-    background-color: #F3F4F6;
-    padding: 2px 8px;
-    border-radius: 12px;
-    font-weight: 500;
-}
-@media (max-width: 768px) {
-    .testimonial-section {
-        padding: 50px 20px;
-    }
-    .testimonial-title {
-        font-size: 26px;
-    }
-}
-</style>
+/* ===== End of style.css ===== */
 
