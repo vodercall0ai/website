@@ -673,9 +673,8 @@ body {
     padding: 40px 30px;
     border-radius: 16px;
     text-align: center;
-    width: 400px;
-    max-width: 400px;
-    height: 300px;
+    max-width: 330px;
+    max-height: 300px;
     margin-bottom: 0px;
     display: flex;
     flex-direction: column;
